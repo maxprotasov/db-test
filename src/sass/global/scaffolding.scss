@@ -1,0 +1,48 @@
+body {
+  min-width: 303px;
+  color: #000;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 27px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  min-width: 303px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  @media #{$tablet} {
+    width: 648px;
+  }
+
+  @media #{$smalldesktop} {
+    width: 903px;
+  }
+  @media #{$bigdesktop} {
+    width: 1263px;
+    max-width: 1263px;
+  }
+}
+.btn {
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 600;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 15px 15px;
+  &:hover {
+  }
+  &:active {
+  }
+}

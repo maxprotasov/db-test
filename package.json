@@ -1,12 +1,12 @@
 {
-  "name": "start",
+  "name": "db-test",
   "version": "0.1.0",
   "private": true,
-  "description": "start",
+  "description": "test",
   "author": "max protasov",
   "repository": {
     "type": "git",
-    "url": "git@github.com:maxprotasov/start.git"
+    "url": "git@github.com:maxprotasov/db-test.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
