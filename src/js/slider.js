@@ -1,18 +1,14 @@
 "use strict"
 
-var setAutoScroll = function() {
-  var toggles = document.querySelectorAll(".slider__input");
+  window.slider = (function setAutoScroll() {
   setInterval(function() {
-    console.log(toggles);
-    toggles.forEach(function() {
-
-    });
-    // for (key in toggles) {
-    //   if (key.checked) {
-    //     key.checked = false;
-    //
-    //   };
-    // };
+  var inputChecked = document.querySelector(".slider__input:checked"),
+    inputCheckedId = Number(inputChecked.id.slice(13));
+    if (inputCheckedId != 5) {
+    inputCheckedId++;
+    } else {
+  inputCheckedId = 1;
+ };
+    document.getElementById('slider-input-' + inputCheckedId).checked = true;
   },7500);
-};
-setAutoScroll();
+})();
