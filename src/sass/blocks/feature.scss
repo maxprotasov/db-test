@@ -1,5 +1,7 @@
 .feature {
   width: 100%;
+  border-bottom: 1px solid #dbddde;
+  margin-bottom: 20px;
 }
 .feature__wrap {
   @media #{$tablet} {
@@ -14,20 +16,20 @@
 }
 .feature__item {
   display: block;
-  border-bottom: 1px solid #dbddde;
-  border-left: 1px solid #dbddde;
-  border-right: 1px solid #dbddde;
   font-size: 16px;
   @media #{$tablet} {
     display: inline-block;
     vertical-align: bottom;;
-    width: 214px;
-  }
-  @media #{$bigdesktop} {
-    width: 251px;
+    width: 216px;
     &:hover {
       background-color: #eeeeee;
     }
+  }
+  @media #{$smalldesktop} {
+    width: 235px;
+  }
+  @media #{$bigdesktop} {
+    width: 252px;
   }
 }
 .feature__link {
@@ -36,10 +38,11 @@
   color: $feature-color;
   padding: 40px;
   font-weight: 600;
-  padding-left: 37%;
+  padding-left: 35%;
   position: relative;
+  min-width: 152px;
   @media #{$tablet} {
-    padding-left: 65px;
+    padding-left: 60px;
     padding-right: 0;
   }
   @media #{$bigdesktop} {
@@ -49,8 +52,9 @@
 .feature__img {
   position: absolute;
   left: 50px;
-  bottom: 50px;
+  bottom: 40px;
   @media #{$tablet} {
     left: 15px;
+    bottom: 50px;
   }
 }
