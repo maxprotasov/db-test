@@ -1,0 +1,1 @@
+"use strict";window.slider=function(){setInterval(function(){var e=document.querySelector(".slider__input:checked"),t=Number(e.id.slice(13));5!=t?t++:t=1,document.getElementById("slider-input-"+t).checked=!0},7500)}();
