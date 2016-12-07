@@ -584,7 +584,7 @@ template {
 
 .form__button {
   position: absolute;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   fill: #d1d1d1;
   right: 4px;
